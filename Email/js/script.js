@@ -17,6 +17,7 @@ inputEmail.innerHTML = userEmail;
 
 if (blocked == true) {
     message.innerHTML = "This email is no more able to be used to this site";
+    message.classList.add("red");
 } else {
     message.innerHTML = "Welcome back!";
 }
