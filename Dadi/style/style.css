@@ -1,0 +1,66 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-style: italic;
+    color: white;
+}
+
+body {
+    background: rgb(9, 9, 83);
+}
+
+.container {
+    width: 80%;
+    max-width: 1400px;
+    margin: 5rem auto;
+    padding: 5rem;
+    display: flex;
+    justify-content: space-around;
+    background: tomato;
+    position: relative;
+    border-radius: 50px;
+}
+
+.box {
+    width: 40%;
+    background: blue;
+    padding: 2rem 3rem;
+    text-align: center;
+    border-radius: 50px;
+}
+
+.button {
+    position: absolute;
+    bottom: 5%;    
+}
+
+.button button {
+    font-size: 1.5rem;
+    color: white;
+    background: black;
+    padding: .5rem 2rem;
+    border-radius: 25px;
+    border: 2px solid white;
+    box-shadow: 0 0 0 5px black;
+}
+
+.number {
+    width: 50%;
+    height: 5rem;
+    line-height: 5rem;
+    margin: 1rem auto;
+    border-radius: 25px;
+    background: white;
+    color: black;
+    font-size: 40px;
+}
+
+.winner {
+    margin: 5rem auto;
+    font-size: 5rem;
+    text-align: center;
+}
