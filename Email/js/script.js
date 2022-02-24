@@ -2,6 +2,9 @@ let emailBlackList = ["LordVoldemort@gmail.com", "DoloresUmbridge@yahoo.com", "L
 
 const userEmail = prompt("Type your email");
 
+let inputEmail = document.querySelector(".input-email");
+let message = document.querySelector(".message")
+
 let blocked = false;
 
 for (let i = 0; i < emailBlackList.length; i++) {
@@ -10,9 +13,11 @@ for (let i = 0; i < emailBlackList.length; i++) {
     } 
 }
 
+inputEmail.innerHTML = userEmail;
+
 if (blocked == true) {
-    console.log(userEmail, "-", "This email is nomore able to continue to this site");
+    message.innerHTML = "This email is no more able to be used to this site";
 } else {
-    console.log("Welcome back", userEmail, "!");
+    message.innerHTML = "Welcome back!";
 }
 
